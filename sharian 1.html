@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharian - Ecommerce</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff6600;
+      color: #000;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav {
+      text-align: center;
+      margin: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #111;
+      color: #fff;
+    }
+    th, td {
+      border: 1px solid #ff6600;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #ff6600;
+      color: #000;
+    }
+    ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+    form {
+      width: 60%;
+      margin: 40px auto;
+      background-color: #111;
+      padding: 20px;
+      border: 2px solid #ff6600;
+      border-radius: 10px;
+    }
+    form h2 {
+      text-align: center;
+      color: #ff6600;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ff6600;
+      border-radius: 5px;
+      background-color: #000;
+      color: #fff;
+    }
+    input[type="submit"] {
+      background-color: #ff6600;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    input[type="submit"]:hover {
+      background-color: #e65c00;
+      box-shadow: 0 0 10px #ff6600;
+    }
+  </style>
+</head>
+<body>
+  <header>Sharian - Ecommerce</header>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#register">Register</a>
+  </nav>
+
+  <!-- Ecommerce Table -->
+  <section id="products">
+    <h2 style="text-align:center; color:#ff6600;">Product List</h2>
+    <table>
+      <tr>
+        <th>Ecommerce Firm</th>
+        <th>Icon</th>
+        <th>Product Name</th>
+        <th>Product Category</th>
+        <th>Product Description</th>
+      </tr>
+      <tr>
+        <td>Sharian</td>
+        <td>🛒</td>
+        <td>Smartphone X</td>
+        <td>Electronics</td>
+        <td>
+          <ul>
+            <li>6.5-inch display</li>
+            <li>128GB storage</li>
+            <li>Triple camera</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Sharian</td>
+        <td>👟</td>
+        <td>Air Sneakers</td>
+        <td>Fashion</td>
+        <td>
+          <ul>
+            <li>Lightweight</li>
+            <li>Breathable</li>
+            <li>Durable sole</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Sharian</td>
+        <td>💻</td>
+        <td>Laptop Pro</td>
+        <td>Electronics</td>
+        <td>
+          <ul>
+            <li>Intel i7 Processor</li>
+            <li>16GB RAM</li>
+            <li>1TB SSD</li>
+          </ul>
+        </td>
+      </tr>
+      <!-- Add up to 15 products as needed -->
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section id="register">
+    <form>
+      <h2>Customer Registration</h2>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <input type="submit" value="Register">
+    </form>
+  </section>
+</body>
+</html>
